@@ -1,3 +1,4 @@
+	//底部盒子拖动
 	function drag(){
 		var oBox=document.getElementById('box');
 		var y=0;
@@ -18,7 +19,7 @@
 			return false;
 		}
 	}
-	
+	//回到顶部
 	function gotop(){
 		var oGotop=document.getElementById('gotop');
 		window.onscroll=function(){
@@ -47,19 +48,6 @@
 					clearInterval(timer);
 				}
 			},30);			
-		}
-	}
-
-	window.onresize=function(){
-		var oWorks=document.getElementById('works');
-		var winW=document.documentElement.clientWidth;
-		var n=1050/document.documentElement.clientWidth;
-
-		if(winW>940){
-			oWorks.style.width= winW*n+'px';
-		}
-		if(winW<940){
-			oWorks.style.width= winW+'px';
 		}
 	}
 
