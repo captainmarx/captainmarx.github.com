@@ -273,7 +273,7 @@
 	transform: translateZ(100px);
 }
 #box .back{ 
-	transform: translateZ(-100px);
+	transform: translateZ(-100px) scale(-1,1);
 }
 #box .left{ 
 	transform:rotateY(-90deg) translateZ(100px);
